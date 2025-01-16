@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="modal.css">
+        <!-- fonttext -->
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bokor&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- paragrapgh text -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bokor&family=DM+Serif+Text:ital@0;1&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- Animation for coverpage -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+ <!-- about css link -->
+ <link rel="stylesheet" href="about.css">
+ <!--  about font text -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bokor&family=DM+Serif+Text:ital@0;1&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- pictures lines font family -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
+<!-- lines animation -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<!-- cards css link-->
+<link rel="stylesheet" href="cards.css"> 
+
+    </head>
+    <style>
+      .icon1:hover {
+    color: orange;
+}
+
+.icon2:hover .icon1 {
+    color: orange;
+    text-align: center;
+}
+    </style>
+    <!-- visitor code -->
+    <body>
+      <header>
+        <div class="container-fluid bgview text-white ">
+            <div class="row">
+                <div class="col-6">
+                  <p style="position: relative;top: 8px;" id="datetext">  Loading...</p>
+                </div>
+                <div class="col-6">
+                   <p style="position: relative;top: 8px;" class="float-end" id="visitortext"> </p>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <script>
+      //visitor counter
+      var count =localStorage.getItem('Counter') || 0
+
+      var c = ++count
+      localStorage.setItem('Counter',c)
+     var mycount = localStorage.getItem('Counter')
+
+     
+      //date
+      function mytimer()
+      {
+          var mydate = new Date()
+          document.getElementById('datetext').innerText = mydate
+          document.getElementById('visitortext').innerText = mycount
+
+      }
+    setInterval(mytimer,1000)
+     
+  </script>
+    
+  </body>
+
+    <body class="body">
+        <header>
+            <!-- place navbar here -->
+             <nav
+                class="navbar navbar-expand-lg navbar-light "
+             >
+                <div class="container-fluid">
+                  <img src="logo/ff-removebg-preview.png"   class="logo">
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <li class="nav-item ">
+                                <a class="nav-link active" style="font-weight: bolder;" href="#Home" aria-current="page"
+                                    >Home 
+                                     <span class="visually-hidden">(current)</span></a>
+                                
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link  " style="font-weight: bolder;" href="#About">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link   " style="font-weight: bolder;" href="#Products">Products</a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link  " style="font-weight: bolder;" href="#Contact">Contact</a>
+                          </li>
+                            
+                        </ul>
+                        <form class="d-flex my-2 my-lg-0" id="searchForm">
+                          <input class="form-control me-sm-2" type="text" id="searchInput" placeholder="Search" />
+                          <button class="btn1 btn btn-my-2 my-sm-0 text-white" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+             </nav>
+        </header>
+        <!-- landing page starts here -->
+        <main>
+            <div class="bglandingpage " id="Home">
+               <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 col-sm-12">
+                        <span>  <h1 class="mobiledm-serif-text-regular animate__animated animate__fadeInLeft">Love Yourself <br>With 
+                            Beauty<br>Treatment 
+                            
+                            <p class="paragrapgh animate__animated animate__fadeInLeft">"Unleash your inner beauty with every 
+                                <br>brushstroke where confidence <br> meets creativity."</p>
+                            </h1></span>
+                    </div>
+                    <div class="col-lg-4 bgimg1 col-sm-12 ">
+                    <img src="model/portrait-beautiful-young-woman-with-clean-fresh-sk-7ACXDQG (1).png" class="img-fluid animate__animated animate__fadeInRightBig" alt="">
+                </div>
+                </div>
+               </div>
+            </div>
+
+            <main>
+              <div class="aboutbg" id="About">
+              <div class="container ">
+                  <div class="row">
+                  <div class="text-box aboutus">
+                  
+                   
+                   <h1>About Us</h1>
+                  </div>
+                  
+                  <div class="col-lg-4  col-sm-12"><img src="about imgs/eyes.jpg" class=" eyesimg img-fluid" alt="">
+                  </div>
+                      
+                  <div class=" col-lg-8 col-sm-8 text-center"> 
+                          <div class="eyestextroboto-light  ">
+                          
+                              <p class="animate__animated animate__fadeInLeft   ">  We believe in the power of makeup to express individuality.</p>
+                          
+                          
+                          
+                          <p class="animate__animated animate__fadeInLeft animate__delay-1s"> Our passion is helping you feel confident and beautiful.</p>
+                           
+                           
+                          <p class="animate__animated animate__fadeInLeft animate__delay-2s">Get ready to turn heads with our stunning looks!</p>
+                           
+                           
+                          <p class="animate__animated animate__fadeInLeft animate__delay-3s"> Makeup that makes a statement.</p>
+                    </div>
+                      </div>
+              </div>
+  
+              </div>
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  
+                  <div class="container secondparent ">
+                      <div class="row">
+                         
+                           
+                    
+                           <div class="col-lg-8 col-sm-7">
+                              <p class="makeuplines animate__animated animate__fadeInRight animate__delay-4s  ">"Get ready to turn heads with our stunning collection <br>of makeup! From bold and dramatic looks to everyday essentials,<br> we've got everything you need to create the perfect look for any occasion.</p>
+                          </div> 
+                          <div class="col-lg-4  col-sm-12">
+                              <img src="about imgs/jazmin-quaynor-FoeIOgztCXo-unsplash.jpg" class=" makeupimg img-fluid" alt="">
+  
+                          </div>                   
+  
+                      </div>
+                  </div>
+  
+          </main>
+          <main>
+              <div class="slider">
+                  <div class="container">
+                      
+                          <h1 class="brands"> Brands</h1>
+                          <div class=" bgimg ">
+                              <div class="parentlogo">
+                      <div class="logo-slider ">
+                          <img src="slider logos/Elf_logo_PNG1.png" class="img-fluid" alt="">
+                          <img src="slider logos/Lakme_logo_PNG2.png"class="img-fluid" alt="">
+                          <img src="slider logos/Maybelline_(3).png" class="img-fluid" alt="">
+                          <img src="slider logos/nars-seeklogo.png" class="img-fluid" alt="">
+                          
+                         
+                      </div>
+                      <!-- second logos -->
+                      <div class="logo-slider ">
+                          <img src="slider logos/Elf_logo_PNG1.png" class="img-fluid" alt="">
+                          <img src="slider logos/Lakme_logo_PNG2.png"class="img-fluid" alt="">
+                          <img src="slider logos/Maybelline_(3).png" class="img-fluid" alt="">
+                          <img src="slider logos/nars-seeklogo.png" class="img-fluid" alt="">
+                          
+                         
+                      </div>
+                  </div>
+                     
+                  </div>
+  
+                     
+  
+                  </div>
+              </div>
+        <br>
+        <br>
+        <!-- card starting -->
+         
+          
+<!-- Optional: Place to the bottom of scripts -->
+
+         
+        <main>
+          <div id="lakmeSection">
+          <div class="container-fluid d-flex justify-content-center" id="Products">
+              <h1 class="lakme">Lakmē</h1>
+            </div>
+          </div>
+      </main>
+          <main class="backgroundcolour">
+              <!-- lakme cards  -->
+              <div class="container">
+                  <div class="row">
+                    <!-- lakme Card 1 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                      <div class="card">
+                        <img src="img/lakme/lakme 1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Contour Stick</h5>
+                          <p class="card-text">Lakmē VitC Superglow Skin Perfecting Tint </p>
+                          <p><b>1500 PKR</b></p>        
+                              <button class="btncards btn- w-100 text-white "onclick="viewdetails('Contour Stick','Lakmē VitC Superglow Skin Perfecting Tint',1500,'img/lakme/lakme 1.webp')" >view details</button>
+                        </div>
+                      </div>
+                  </div>
+                
+                    <!-- lakme Cards 2 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                      <div class="card">
+                        <img src="img/lakme/lame 2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Glow Concealer</h5>
+                          <p class="card-text">Lakmē Vit C Superglow <br> Conceale</p>
+                          <p><b>2500 PKR</b></p>
+                          <button class="btncards btn- w-100 text-white "onclick="viewdetails('Glow Concealer','Lakmē Vit C Superglow',2500,'img/lakme/lame 2.webp')"  >view details</button>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <!-- lakme Card 3 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                      <div class="card">
+                        <img src="img/lakme/lakme3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Glow Primer</h5>
+                          <p class="card-text">Lakmē VitC Superglow Skin Perfecting Primer</p>
+                          <p><b>2300 PKR</b></p>
+                          <button class="btncards btn- w-100 text-white "onclick="viewdetails('Glow Primer','Lakmē VitC Superglow Skin Perfecting Primer',2300,'img/lakme/lakme3.webp')"  >view details</button>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <!-- lakme Card 4 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                      <div class="card">
+                        <img src="img/lakme/lakme 4.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Glow Tint</h5>
+                          <p class="card-text">Lakmē VitC Superglow Skin Perfecting Tint</p>
+                          <p><b>4000 PKR</b></p>
+                          <button class="btncards btn- w-100 text-white "onclick="viewdetails('Glow Tint','Lakmē VitC Superglow Skin Perfecting Tint',4000,'img/lakme/lakme 4.webp')"  >view details</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                
+          </main>
+          
+<br>
+      
+          <main>
+              <div class="container-fluid d-flex justify-content-center" id="elfSection">
+                  <h1 class="lakme">e.l.f</h1>
+              </div>
+          </main>
+          
+          <main class="backgroundcolour">
+          <div class="container">
+              <div class="row">
+                <!-- elf cards 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card">
+                    <img src="img/elf/elf 1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Glow Reviver 
+                      </h5>
+                      <p class="card-text">Holiday lip kit with 8 shimmery tinted lip oils</p>
+                      <p><b>3000 PKR</b></p>
+                      <button class="btncards btn- w-100 text-white "onclick="viewdetails('Glow Reviver','Holiday lip kit with 8 shimmery tinted lip oils',3000,'img/elf/elf 1.jpg')"  >view details</button>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- elf Card 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card">
+                    <img src="img/elf/elf 2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Power Grip Matte Primer
+                      </h5>
+                      <p class="card-text">Sticky, mattifying makeup primer to help minimize 
+
+                      </p>
+                      <p><b>2999 PKR</b></p>
+                      <button class="btncards btn- w-100 text-white "onclick="viewdetails('Power Grip Matte Primer','Sticky, mattifying makeup primer to help minimize',2999,'img/elf/elf 2.jpg')"  >view details</button>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- elf Card 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card">
+                    <img src="img/elf/elf 3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Glow Reviver Lip  <br>Oil Glimmer
+                      </h5>
+                      <p class="card-text">Ultra-glossy glimmer lip oil </p>
+                      <p><b>5999 PKR</b></p>
+                      <button class="btncards btn- w-100 text-white "onclick="viewdetails('Glow Reviver Lip oil','Ultra-glossy glimmer lip oil',5999,'img/elf/elf 3.jpg')"  >view details</button>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- elf Card 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card">
+                    <img src="img/elf/elf 4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">High Definition Powder</h5>
+                      <p class="card-text">Loose setting powder for a soft-focus finish</p>
+                      <p><b>2000 PKR</b></p>
+                      <button class="btncards btn- w-100 text-white "onclick="viewdetails('High Definition Powder','Loose setting powder for a soft-focus finish',2000,'img/elf/elf 4.jpg')"  >view details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+      </main>
+      <br>
+      <main>
+          <main>
+              <div class="container-fluid d-flex justify-content-center" id="fitMeSection">
+                  <h1 class="lakme">fit me</h1>
+              </div>
+          </main>
+
+          <main class="backgroundcolour3">
+        <div class="container">
+          <div class="row">
+            <!-- fit me Card 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">
+                <img src="img/fit me/fit me 1.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lip Stains 
+                  </h5>
+                  <p class="card-text"> Long Lasting, Delicate
+                  </p>
+                  <p><b>3000 PKR</b></p>
+                  <button class="btncards btn- w-100 text-white "onclick="viewdetails('Lip Stains','Long Lasting, Delicate',3000,'img/fit me/fit me 1.webp')"  >view details</button>
+                </div>
+              </div>
+            </div>
+        
+            <!-- fit me Card 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">
+                <img src="img/fit me/fit me 2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Foundation 
+                  </h5>
+                  <p class="card-text">Full Coverage Foundation 
+                  </p>
+                  <p><b>3299 PKR</b></p>
+                  <button class="btncards btn- w-100 text-white "onclick="viewdetails('Foundation','Full Coverage Foundation',3299,'img/fit me/fit me 2.webp')"  >view details</button>
+                </div>
+              </div>
+            </div>
+        
+            <!-- fit me Card 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">
+                <img src="img/fit me/fit me 3.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Foundation
+                  </h5>
+                  <p class="card-text"> Matte Liquid Foundation
+                  </p>
+                  <p><b>1400 PKR</b></p>
+                  <button class="btncards btn- w-100 text-white "onclick="viewdetails('Foundation','Matte Liquid Foundation',1400,'img/fit me/fit me 3.webp')"  >view details</button>
+                </div>
+              </div>
+            </div>
+        
+            <!-- fit me Card 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card">
+                <img src="img/fit me/fit me 4.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Eyeshado </h5>
+                  <p class="card-text">All in One  Eyeshado 
+                  </p>
+                  <p><b>2999 PKR</b></p>
+                  <button class="btncards btn- w-100 text-white "onclick="viewdetails('Eyeshado','All in One  Eyeshado',2999,'img/fit me/fit me 4.webp')"  >view details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <br>
+          
+      <main>
+          <div class="container-fluid d-flex justify-content-center" id="narsSection">
+              <h1 class="lakme">Nars</h1>
+          </div>
+      </main>
+
+      <main class="backgroundcolour4">
+    <div class="container">
+      <div class="row">
+        <!-- nars Card 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="img/nars/nars 1.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> Nars Liquid Blush Orgasm 5155 15ml
+              </h5>
+              <p class="card-text">One drop. Won’t stop. Liquid blush effortlessly glides on skin for a lasting glow.
+              </p>
+              <p><b>7000 PKR</b></p>
+              <button class="btncards btn- w-100 text-white "onclick="viewdetails('Nars Liquid Blush Orgasm 5155 15ml','One drop. Won’t stop. Liquid blush effortlessly glides on skin for a lasting glow.',7000,'img/nars/nars 1.webp')"  >view details</button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- nars Card 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="img/nars/nars 2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">  Nars Radiant Creamy Concealer Chantilly 6ml
+              </h5>
+              <p class="card-text">Nars Radiant Creamy Concealer is renowned for its luxurious texture and flawless.
+              </p>
+              <p><b>12000 PKR</b></p>
+              <button class="btncards btn- w-100 text-white "onclick="viewdetails(' Nars Radiant Creamy Concealer Chantilly 6ml','Nars Radiant Creamy Concealer is renowned for its luxurious texture and flawless.',12000,'img/nars/nars 2.jpg')"  >view details</button>
+            </div>
+          </div>
+        </div>
+                      <!-- nars Card 3 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="img/nars/nars 3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">  Jean Paul Gaultier Scandal For Women Eau De Parfum 80ml
+              </h5>
+              <p class="card-text">Jean Paul Gaultier Scandal For Women Eau De Parfum 90ml.This Parfum is an intense and seductive fragrance.
+              </p>
+              <p><b>23000 PKR</b></p>
+              <button class="btncards btn- w-100 text-white "onclick="viewdetails('Jean Paul Gaultier Scandal For Women Eau De Parfum 80ml','Jean Paul Gaultier Scandal For Women Eau De Parfum 90ml.',2300,'img/nars/nars 3.jpg')"  >view details</button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- nars Card 4 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="img/nars/nars 4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">  Lattafa Yara Moi Eau De Parfum 100ml
+              </h5>
+              <p class="card-text">Lattafa Yara Moi Eau De Parfum is a captivating blend of elegance and sophistication.
+              </p>
+              <p><b>12500 PKR</b></p>
+              <button class="btncards btn- w-100 text-white "onclick="viewdetails('Lattafa Yara Moi Eau De Parfum 100ml','Lattafa Yara Moi Eau De Parfum is a captivating blend of elegance and sophistication.',12500,'img/nars/nars 4.jpg')"  >view details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("searchForm").addEventListener("submit", function(event) {
+       event.preventDefault();  // Prevent form from submitting normally
+   
+       var searchQuery = document.getElementById("searchInput").value.trim().toLowerCase();
+   
+       // Clear any previous highlighting (optional)
+       document.querySelectorAll('.product-section').forEach(section => section.classList.remove('highlight'));
+   
+       // Scroll to the appropriate section based on search query
+       if (searchQuery === "lakme") {
+         document.getElementById("lakmeSection").scrollIntoView({ behavior: 'smooth' });
+       } else if (searchQuery === "e.l.f") {
+         document.getElementById("elfSection").scrollIntoView({ behavior: 'smooth' });
+       } else if (searchQuery === "fit me") {
+         document.getElementById("fitMeSection").scrollIntoView({ behavior: 'smooth' });
+       } else if (searchQuery === "nars") {
+         document.getElementById("narsSection").scrollIntoView({ behavior: 'smooth' });
+       } else {
+         alert("No results found for: " + searchQuery);
+       }
+     });
+   </script>
+   
+   <style>
+     .highlight {
+       background-color: #f0f8ff; /* Light highlight color */
+     }
+   </style>
+
+  <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="myModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+    aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">
+                    Please Rate Our Website
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <i class="fa fa-star fs-3 icon1" onmouseover="starshover(1)" onclick="ratings(1)"></i>
+                <i class="fa fa-star fs-3 icon2" onmouseover="starshover(2)" onclick="ratings(2)"></i>
+                <i class="fa fa-star fs-3 icon3" onmouseover="starshover(3)" onclick="ratings(3)"></i>
+                <i class="fa fa-star fs-3 icon4" onmouseover="starshover(4)" onclick="ratings(4)"></i>
+                <i class="fa fa-star fs-3 icon5" onmouseover="starshover(5)" onclick="ratings(5)"></i>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        <footer>
+            <!-- place footer here -->
+            <div class="footer-logo">
+                <div class="contact-section" id="Contact">
+                    <h3>Contact Us</h3>
+                    <a href="https://workspace.google.com/intl/en/gmail/">waizjamal7@gmail.com</a>
+                    <p>Phone: +92 3329183482</p>
+                    <div class="container text-center">
+                
+                        
+                        <a href="https://facebook.com" target="_blank" class="icon facebook">
+                            <img src="Facebook_logo_(square).png.webp" alt="facebook">
+
+                        <a href="https://youtube.com" target="_blank" class="icon youtube">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="icon instagram">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                        </a>
+                
+                </div>
+                </div>
+                </div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        >
+      </script>
+      <script>
+        const myModal = new bootstrap.Modal(
+            document.getElementById("modalId"),
+            options,
+        );
+    </script>
+    
+    <script>
+        function showModalFunc() {
+            // Check if the DOM is fully loaded
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', showModalFunc);
+            } else {
+                // Bootstrap 5 Modal initialization
+                var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+                myModal.show();  // This will display the modal
+            }
+        }
+    
+        // Delay showing the modal after 1 second
+        setTimeout(showModalFunc, 60000);
+    
+        function ratings(myModal) {
+            // Close the modal after rating is given
+            var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+            myModal.hide();  // Hide the modal when a rating is selected
+    
+            alert("You rated: " + rating + " stars!"); // Display the rating (can be customized)
+        }
+    
+        // Hover effect for stars (optional)
+        function starshover(starNum) {
+            // Change the color of stars based on hover
+            for (let i = 1; i <= 5; i++) {
+                const star = document.querySelector('.icon' + i);
+                if (i <= starNum) {
+                    star.style.color = 'orange'; // Highlight the stars on hover
+                } else {
+                    star.style.color = ''; // Reset the color for non-hovered stars
+                }
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "cOA9LCjRmm9ROpqLy",
+            });
+        })();
+    
+    
+    </script>
+    <!-- <script src="modal.js"></script> -->
+     <script>
+        function starshover(stars){
+    if (stars==1){
+        $('.icon1').css({
+            "color":"orange"
+        })
+        $('.icon2').css({
+            "color":"black"
+        })
+        $('.icon3').css({
+            "color":"black"
+        })
+        $('.icon4').css({
+            "color":"black"
+        })
+        $('.icon5').css({
+            "color":"black"
+        })
+    
+    }
+    else if(stars==2) {
+        $('.icon1').css({
+            "color":"orange"
+        })
+        $('.icon2').css({
+            "color":"orange"
+        })
+        $('.icon3').css({
+            "color":"black"
+        })
+        $('.icon4').css({
+            "color":"black"
+        })
+        $('.icon5').css({
+            "color":"black"
+        })
+    }
+    else if(stars==3) {
+        $('.icon1').css({
+            "color":"orange"
+        })
+        $('.icon2').css({
+            "color":"orange"
+        })
+        $('.icon3').css({
+            "color":"orange"
+        })
+        $('.icon4').css({
+            "color":"black"
+        })
+        $('.icon5').css({
+            "color":"black"
+        })
+    
+    }
+    else if(stars==4) {
+        $('.icon1').css({
+            "color":"orange"
+        })
+        $('.icon2').css({
+            "color":"orange"
+        })
+        $('.icon3').css({
+            "color":"orange"
+        })
+        $('.icon4').css({
+            "color":"orange"
+        })
+        $('.icon5').css({
+            "color":"black"
+        })
+    
+    
+    }
+    else if(stars==5) {
+        $('.icon1').css({
+            "color":"orange"
+        })
+        $('.icon2').css({
+            "color":"orange"
+        })
+        $('.icon3').css({
+            "color":"orange"
+        })
+        $('.icon4').css({
+            "color":"orange"
+        })
+        $('.icon5').css({
+            "color":"orange"
+        })
+    
+    }
+    else {
+        $('.icon1').css({
+            "color":"black"
+        })
+        $('.icon2').css({
+            "color":"black"
+        })
+        $('.icon3').css({
+            "color":"black"
+        })
+        $('.icon4').css({
+            "color":"black"
+        })
+        $('.icon5').css({
+            "color":"black"
+        })
+    
+    }
+    }
+    var count = 0
+    function ratings(stars)
+    {
+               ++count
+                var obj = 
+                {
+                    "rating":stars,
+                    "name":"User"
+                }
+                emailjs.send('service_17s6e66', 'template_pf04ekg', obj);
+                alert("Your ratings has been recieved")
+                localStorage.setItem('Count',count)      
+    }
+     </script>
+     <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+        <script src="main.js"></script>
+    </body>
+</html>

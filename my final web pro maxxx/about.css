@@ -1,0 +1,146 @@
+ .container{
+    background: transparent;
+    border-radius: 16px;
+     /* backdrop-filter: blur(3.1px);  */
+    border: transparent;
+    /* display: flex; */
+     
+}
+.aboutus {
+    
+    font-family: "Anton SC", serif;
+    margin-top: 50px; 
+    font-weight: 600;
+    font-style: normal;
+text-align: center;
+font-size: xx-large;
+color: rgb(107, 24, 24);;
+/* background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExa29mY2loeGI2cHU0d2Rtb3k2eXlxbnVkcDZldnB2c2FpY3NueXU1cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cz4RyLAZSqa5G8WtGl/giphy.gif); */
+background-position: center;
+/* -webkit-background-clip: text; */
+
+  } 
+  .eyesimg{
+      width: 900px;  */
+    height:500px;
+    
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+   border-radius: 30px;
+   filter: grayscale(.4);
+transition: .3s;   
+  }
+  .eyestextroboto-light {
+        font-family: "Roboto", serif;
+        font-size:20px;
+        font-weight:400;
+        font-style: italic;
+        color: rgb(216, 142, 154);
+        margin-left: 200px;
+        margin-top: 100px;
+    
+  }
+  .eyesimg:hover{
+    filter: grayscale(0);
+    transform: scale(1.3) rotate(-7deg);
+  }
+  /* .secondparent{
+/* From https://css.glass */
+/* background: rgba(248, 129, 212, 0.13);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.6px);
+-webkit-backdrop-filter: blur(3.6px);
+border: 1px solid rgba(248, 129, 212, 0.3);
+
+  }  */
+  
+  
+ 
+  .makeuplines{
+ 
+    font-family: "Anton SC", serif;
+ font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(107, 24, 24);
+    margin-top: 200px;
+    margin-right: auto;
+    text-align: center;
+   
+  }
+  .makeuplines:hover{
+    color: rgb(61, 19, 19);
+  }
+     .makeupimg {
+   
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    border-radius: 50px;
+    width: auto;
+    height: 600px; 
+    filter: grayscale(.4);
+    transition: .3s;
+  }  
+  .makeupimg:hover{
+    filter: grayscale(0);
+    transform: scale(1.3) rotate(7deg);
+  }
+/* logo sliders */
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.brands{
+ 
+   font-family: "Anton SC", serif;
+   margin-top: 50px; 
+  font-weight: 500;
+  font-size: 60px;
+  font-style: normal; 
+text-align: center;
+color:rgb(107, 24, 24); ;
+/* background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExa29mY2loeGI2cHU0d2Rtb3k2eXlxbnVkcDZldnB2c2FpY3NueXU1cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cz4RyLAZSqa5G8WtGl/giphy.gif); */
+/* background-position: center; */
+/* -webkit-background-clip: text; */
+margin-top: 40px;
+
+}
+    .bgimg { 
+  /* From https://css.glass */
+ background: transparent;
+border-radius: 30px;
+/* box-shadow: rgba(43, 41, 42, 0.952) 0px 2px 1px, rgba(44, 42, 44, 0.932) 0px 4px 2px, rgba(63, 60, 63, 0.973) 0px 8px 4px, rgb(54, 52, 54) 0px 16px 8px, rgb(68, 65, 67) 0px 32px 16px; */
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+border: 1px solid rgba(228, 219, 226, 0.548);
+
+}  
+
+.parentlogo{
+  overflow: hidden;
+  padding: 50px 0;
+  background: fixed;
+  white-space: nowrap;
+}
+.logo-slider{
+  display: inline-block;
+  animation: 4s slider infinite linear;
+ 
+}
+
+.logo-slider img{
+ 
+  height: 40px;
+  margin: 0 60px;
+  
+}
+ @keyframes slider {
+  from{
+    transform:translateX(0);
+  }
+   to {transform:translateX(-100%);
+   }
+   
+
+} 

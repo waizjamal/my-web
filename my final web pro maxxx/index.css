@@ -1,0 +1,129 @@
+
+
+.logo{
+    width: 120px;
+    margin-right: 100px;
+    
+    
+}
+.navbar{
+background-color: #facccc;
+}
+   .btn1{
+  border-color: #570c0c; 
+  background-color: #570c0c;
+}  
+.btn1:hover{
+  background-color: rgba(117, 40, 53, 0.808);
+}
+/* add to cart */
+.btn{
+ background-color:#facccc;
+}
+
+
+.btn:hover{
+  background-color: rgba(117, 40, 53, 0.808)
+}
+
+.nav-link:hover{
+   color:  rgb(214, 136, 162);
+}
+/* .firstline{
+    position: relative;
+    bottom: 700px;
+    padding-left: 90px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    color:rgb(107, 98, 98);
+} 
+
+ .firsttextdm-serif-text-regular {
+    position: relative;
+   bottom: 700px;
+   padding-left: 90px;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-size: 70px;
+    font-style: normal;
+    color: #620c0c;
+  }  */
+
+  
+
+
+
+
+ 
+   /* .secondtextdm-serif-text-regular{
+     
+    font-family: "DM Serif Text", serif;
+    font-weight: 200;
+    font-size: 20px;
+    font-style: normal;
+    color: #620c0c;
+    
+   
+    
+  } 
+.secondline{
+  position: relative;
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    color:rgb(107, 98, 98); 
+    
+} */
+.mobiledm-serif-text-regular{
+  font-family: "DM Serif Text", serif;
+    font-weight: 200;
+    font-size: 60px;
+    font-style: normal;
+    color: #620c0c;
+    
+} 
+.paragrapgh{
+  font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    color:rgb(107, 98, 98);
+}
+ 
+.bglandingpage{
+  background-color: #ffcfcf;
+  height: auto;
+  
+  background-image: url(model/jasmine-flowers-white-1.1-Converted-800x764.png);
+}
+ .bgimg1{
+  background-image: url(model/spa-in-the-background-4BT6SD5-800x534.jpg);
+  
+  border-radius: 1800px;
+  height: auto;
+  /* background-size: 50% 50%; */
+ 
+} 
+ html,body{
+  scroll-behavior: smooth;
+} 
+.bgview {
+  background-color: #570c0c;
+}
+.suggestions-list {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 100%;
+  z-index: 10;
+  max-height: 150px;
+  overflow-y: auto;
+}
+.suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+.suggestions-list li:hover {
+  background-color: #ddd;
+}
